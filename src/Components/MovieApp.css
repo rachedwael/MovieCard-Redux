@@ -1,0 +1,186 @@
+.movie-app {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  .movie-app-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .name-filter {
+    height: 50px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .name-filter-text {
+    flex: 1;
+    border: 2px solid black;
+    padding: 5px 10px;
+  }
+  .movie-card:hover .movie-delete-button {
+    opacity: 1;
+  }
+  .movie-card:hover .movie-edit-button  {
+    opacity: 1;
+  }
+  
+  .movie-delete-button {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  .movie-edit-button {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    left:26px;
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  .name-filter-button {
+    border: 2px solid darkmagenta;
+    border-left: none;
+    background-color: transparent;
+    padding: 0 10px;
+  }
+  .rating-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    font-size: 30px;
+  color: gold;
+  }
+  .rating-filter-text {
+    font-size: 0.5em;
+  }
+  .movie-app-main {
+    margin-top: 20px;
+  }
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .movie-card,
+  .new-movie-card {
+    border: 2px solid darkmagenta;
+    width: 207px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border: 2px solid darkmagenta;
+    border-top: none;
+    border-right: none;
+    background-color: chocolate;
+    font-size: 17px;
+  color: gold;
+  }
+  .movie-image {
+    background-image: url(https://www.mearto.com/assets/no-image-83a2b680abc7af87cfff7777d0756fadb9f9aecd5ebda5d34f8139668e0fc842.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .movie-description {
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  .new-movie-card {
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 250px 250px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgb(99, 2, 2);
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 6px;
+    left: 6px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 6px;
+    left: 26px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 6px;
+    left: 45px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 26px;
+    left: 6px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 26px;
+    left: 26px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 26px;
+    left: 45px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 45px;
+    left: 6px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 45px;
+    left: 26px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 45px;
+    left: 45px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
